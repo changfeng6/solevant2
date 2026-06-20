@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情 | SOLEVANT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Custom simple style for tabs or accordion transitions */
+    .accordion-content.hidden {
+      display: none;
+    }
+    .accordion-header svg {
+      transition: transform 0.3s ease;
+    }
+    .accordion-header.active svg {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.svg" alt="SOLEVANT" class="logo-img">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link" id="nav-home">首頁</a>
+        <a href="about.html" class="nav-link" id="nav-about">關於我們</a>
+        <a href="sneakers.html" class="nav-link" id="nav-sneakers">運動鞋</a>
+        <a href="leather.html" class="nav-link" id="nav-leather">皮鞋</a>
+        <a href="heels.html" class="nav-link" id="nav-heels">高跟鞋</a>
+        <a href="casual.html" class="nav-link" id="nav-casual">休閒鞋</a>
+        <a href="others.html" class="nav-link" id="nav-others">其它類</a>
+        <a href="accessories.html" class="nav-link" id="nav-accessories">配件</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">聯絡我們</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cart-toggle-btn" aria-label="Shopping Cart">
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Hero -->
+  <section class="page-hero" style="padding: 30px 0; text-align: left;">
+    <div class="container">
+      <div class="breadcrumbs" id="detail-breadcrumbs" style="justify-content: flex-start;">
+        <a href="index.html">首頁</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#" id="breadcrumb-category">分類</a>
+        <span class="breadcrumb-separator">/</span>
+        <span id="breadcrumb-name" style="color: var(--text-light);">產品名稱</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Detail Section -->
+  <section class="section-padding" style="padding-top: 50px;">
+    <div class="container" id="product-detail-container">
+      
+      <!-- Loaded dynamically via JS -->
+      <div style="text-align: center; padding: 100px 0;" id="loading-placeholder">
+        <p style="color: var(--text-muted);">正在為您載入精品鞋履細節...</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-pane">
+          <img src="images/logo.svg" class="footer-logo-img" alt="SOLEVANT">
+          <p class="footer-desc">極致鞋履的代名詞。我們深信一雙好鞋能帶您走向美好的地方，用工藝書寫您的品味日常。</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">商品分類</h4>
+          <ul class="footer-links">
+            <li><a href="sneakers.html" class="footer-link">動能運動鞋</a></li>
+            <li><a href="leather.html" class="footer-link">經典紳士皮鞋</a></li>
+            <li><a href="heels.html" class="footer-link">名媛雅緻高跟鞋</a></li>
+            <li><a href="casual.html" class="footer-link">日常休閒鞋</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">探索品牌</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">品牌故事</a></li>
+            <li><a href="#" class="footer-link">職人工藝</a></li>
+            <li><a href="#" class="footer-link">聯名特輯</a></li>
+            <li><a href="contact.html" class="footer-link">門市資訊</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">客戶服務</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">聯絡我們</a></li>
+            <li><a href="#" class="footer-link">退換貨政策</a></li>
+            <li><a href="#" class="footer-link">常見問題 FAQ</a></li>
+            <li><a href="#" class="footer-link">鞋履保養指南</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SOLEVANT Luxury Footwear. All rights reserved.</p>
+        <p>設計與開發：Antigravity Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    let selectedSize = '';
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      // Parse Query String
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get('id');
+      
+      if (!productId || typeof productsData === 'undefined' || !productsData[productId]) {
+        // Redirect to homepage if invalid product
+        window.location.href = 'index.html';
+        return;
+      }
+      
+      const p = productsData[productId];
+      
+      // Update Navigation active states
+      const activeNavLink = document.getElementById('nav-' + p.category);
+      if (activeNavLink) {
+        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+        activeNavLink.classList.add('active');
+      }
+      
+      // Update Breadcrumbs
+      const catBreadcrumb = document.getElementById('breadcrumb-category');
+      catBreadcrumb.textContent = p.categoryName;
+      catBreadcrumb.href = p.category + '.html';
+      
+      const nameBreadcrumb = document.getElementById('breadcrumb-name');
+      nameBreadcrumb.textContent = p.name;
+      
+      document.title = p.name + " | SOLEVANT";
+      
+      // Render Content Grid
+      renderProductDetails(p);
+    });
+    
+    function renderProductDetails(p) {
+      const container = document.getElementById('product-detail-container');
+      
+      // Generate sizes based on category
+      let sizesHTML = '';
+      let sizeScaleText = 'US 尺寸';
+      
+      if (p.category === 'heels') {
+        sizeScaleText = '歐碼尺寸 (EU)';
+        const heelsSizes = ['35', '36', '37', '38', '39', '40'];
+        sizesHTML = heelsSizes.map(sz => `<button class="size-btn" onclick="selectSize('${sz}', this)">${sz}</button>`).join('');
+      } else if (p.category === 'accessories') {
+        sizeScaleText = '規格';
+        if (p.id === 'accessories_1') {
+          // Belt sizes
+          const beltSizes = ['100cm', '110cm', '120cm'];
+          sizesHTML = beltSizes.map(sz => `<button class="size-btn" onclick="selectSize('${sz}', this)" style="width: auto; padding: 0 16px;">${sz}</button>`).join('');
+        } else {
+          // Care kit
+          sizesHTML = `<button class="size-btn selected" onclick="selectSize('OneSize', this)" style="width: auto; padding: 0 16px;">單一規格 (One Size)</button>`;
+          selectedSize = 'OneSize'; // auto select
+        }
+      } else if (p.id === 'others_2') {
+        // Slipper sizes
+        sizeScaleText = '尺寸';
+        const slipperSizes = ['S (37-38)', 'M (39-40)', 'L (41-42)', 'XL (43-44)'];
+        sizesHTML = slipperSizes.map(sz => `<button class="size-btn" onclick="selectSize('${sz}', this)" style="width: auto; padding: 0 16px;">${sz}</button>`).join('');
+      } else {
+        // Sneakers, Leather, Boots, Casual
+        const stdSizes = ['7.5', '8.0', '8.5', '9.0', '9.5', '10.0', '10.5', '11.0'];
+        sizesHTML = stdSizes.map(sz => `<button class="size-btn" onclick="selectSize('${sz}', this)">${sz}</button>`).join('');
+      }
+      
+      // Generate Spec rows
+      const specRows = Object.entries(p.specs).map(([key, val]) => `
+        <div style="display: flex; border-bottom: 1px solid var(--border-color); padding: 10px 0; font-size: 14px;">
+          <span style="font-weight: 700; width: 100px; color: var(--primary);">${key}</span>
+          <span style="color: var(--text-muted); flex-grow: 1;">${val}</span>
+        </div>
+      `).join('');
+      
+      container.innerHTML = `
+        <div class="product-detail-grid">
+          
+          <!-- Image Gallery Pane -->
+          <div class="product-gallery">
+            <div class="main-image-view" id="main-view-box">
+              <img id="main-product-image" src="${p.image}" alt="${p.name}">
+            </div>
+            <div class="gallery-thumbs">
+              <div class="thumb-item active" onclick="swapImage('${p.image}', this)">
+                <img src="${p.image}" alt="角度 1">
+              </div>
+              <div class="thumb-item" onclick="swapImage('${p.image}', this, true)">
+                <img src="${p.image}" alt="細節特寫" style="filter: hue-rotate(15deg);">
+              </div>
+              <div class="thumb-item" onclick="swapImage('${p.image}', this, false, true)">
+                <img src="${p.image}" alt="藝術灰階" style="filter: grayscale(1);">
+              </div>
+              <div class="thumb-item" onclick="swapImage('${p.image}', this, false, false, true)">
+                <img src="${p.image}" alt="對比加強" style="filter: contrast(1.3);">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product Description & Checkout Options Pane -->
+          <div class="detail-info-pane">
+            <span class="product-badge sale" style="position: static; display: inline-block; margin-bottom: 12px;">${p.badge}</span>
+            <h1>${p.name}</h1>
+            <div class="detail-cat">${p.categoryName}</div>
+            
+            <div class="detail-price-row">
+              <span class="detail-price">NT$ ${p.price.toLocaleString()}</span>
+              <div class="detail-rating">
+                <svg class="icon-svg" viewBox="0 0 24 24" style="fill: #fbbf24; stroke: none; width: 18px; height: 18px;">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <strong>${p.rating}</strong>
+                <span>(${p.reviews} 則評價)</span>
+              </div>
+            </div>
+            
+            <p class="detail-desc">${p.description}</p>
+            
+            <!-- Size Selector -->
+            <div style="margin-bottom: 24px;">
+              <div class="selector-title">
+                <span>選擇 ${sizeScaleText}</span>
+                <a href="#" onclick="alert('尺寸指南:\\nUS 8 = EU 41 = 26cm\\nUS 9 = EU 42 = 27cm\\nUS 10 = EU 43 = 28cm'); return false;" style="font-size: 13px; text-decoration: underline;">尺寸對照表</a>
+              </div>
+              <div class="size-selector">
+                ${sizesHTML}
+              </div>
+            </div>
+            
+            <!-- Quantity and Add to Cart -->
+            <div class="quantity-add-row">
+              <div class="qty-selector">
+                <button class="qty-btn" onclick="adjustQty(-1)">-</button>
+                <input type="number" id="detail-qty-input" class="qty-input" value="1" min="1" max="10" readonly>
+                <button class="qty-btn" onclick="adjustQty(1)">+</button>
+              </div>
+              <button class="btn btn-primary add-cart-large" onclick="triggerAddToCart('${p.id}')">
+                加入購物車
+              </button>
+            </div>
+            
+            <!-- Technical Specifications Accordion -->
+            <div class="specs-accordion">
+              <div class="accordion-item">
+                <div class="accordion-header active" onclick="toggleAccordion('spec-content', this)">
+                  <span>產品規格表</span>
+                  <svg class="icon-svg" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+                <div class="accordion-content" id="spec-content">
+                  <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                    ${specRows}
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('shipping-content', this)">
+                  <span>配送與退換貨政策</span>
+                  <svg class="icon-svg" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+                <div class="accordion-content hidden" id="shipping-content">
+                  <p style="margin-top: 10px;">• 台灣本島享有尊榮免運服務，商品將於下單後 2-3 個工作天內快速送達。<br>• SOLEVANT 提供 30 天無條件免運費退換貨服務。請確保商品保持全新狀態，包裝、鞋盒與配件完整。</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      `;
+    }
+    
+    // Interactive actions
+    function swapImage(url, thumbEl, isDetail = false, isGray = false, isContrast = false) {
+      document.querySelectorAll('.thumb-item').forEach(item => item.classList.remove('active'));
+      thumbEl.classList.add('active');
+      
+      const img = document.getElementById('main-product-image');
+      if (img) {
+        img.src = url;
+        if (isDetail) {
+          img.style.filter = 'hue-rotate(15deg)';
+        } else if (isGray) {
+          img.style.filter = 'grayscale(1)';
+        } else if (isContrast) {
+          img.style.filter = 'contrast(1.3)';
+        } else {
+          img.style.filter = 'none';
+        }
+      }
+    }
+    
+    function selectSize(size, btnEl) {
+      selectedSize = size;
+      document.querySelectorAll('.size-selector .size-btn').forEach(btn => btn.classList.remove('selected'));
+      btnEl.classList.add('selected');
+    }
+    
+    function adjustQty(change) {
+      const input = document.getElementById('detail-qty-input');
+      if (input) {
+        let val = parseInt(input.value) + change;
+        if (val < 1) val = 1;
+        if (val > 10) val = 10;
+        input.value = val;
+      }
+    }
+    
+    function triggerAddToCart(productId) {
+      const input = document.getElementById('detail-qty-input');
+      const qty = input ? parseInt(input.value) : 1;
+      
+      if (!selectedSize) {
+        alert('請選擇您需要的尺寸！');
+        return;
+      }
+      
+      if (typeof addToCart !== 'undefined') {
+        addToCart(productId, selectedSize, qty);
+      }
+    }
+    
+    function toggleAccordion(id, headerEl) {
+      const content = document.getElementById(id);
+      if (content) {
+        content.classList.toggle('hidden');
+        headerEl.classList.toggle('active');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Studio Background -->
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <circle cx="250" cy="200" r="180" fill="#f1f5f9" opacity="0.6"/>
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="315" rx="150" ry="18" fill="url(#floorShadow)"/>
+  
+  <g filter="url(#softShadow)">
+        <defs>
+      <linearGradient id="soleGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#fef08a"/>
+      </linearGradient>
+      <linearGradient id="bodyGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="100%" stop-color="#f1f5f9"/>
+      </linearGradient>
+    </defs>
+    
+    <path d="M 110 250 C 105 220, 120 170, 160 150 C 175 140, 200 130, 220 160 C 240 185, 290 200, 330 200 C 365 200, 385 220, 390 240 C 395 260, 380 280, 350 280 C 320 280, 120 285, 110 250 Z" fill="url(#bodyGrad3)" stroke="#e2e8f0" stroke-width="1"/>
+    <path d="M 160 150 C 145 165, 150 190, 160 200 C 170 190, 175 160, 160 150 Z" fill="#1e3a8a"/>
+    <path d="M 330 200 C 355 200, 385 220, 390 240 C 375 255, 340 230, 330 200 Z" fill="#e2e8f0" opacity="0.6"/>
+    <path d="M 210 165 L 230 195 M 220 160 L 245 190 M 230 155 L 260 185" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 108 250 C 108 275, 120 295, 150 300 C 200 305, 300 305, 360 295 C 385 290, 392 275, 392 255 C 392 245, 360 250, 350 275 C 330 282, 120 282, 108 250 Z" fill="url(#soleGrad3)"/>
+    <path d="M 230 180 Q 210 230, 260 275" fill="none" stroke="#1e3a8a" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 245 175 Q 225 225, 275 270" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

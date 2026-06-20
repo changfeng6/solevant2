@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Studio Background -->
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <circle cx="250" cy="200" r="180" fill="#f1f5f9" opacity="0.6"/>
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="315" rx="150" ry="18" fill="url(#floorShadow)"/>
+  
+  <g filter="url(#softShadow)">
+        <defs>
+      <linearGradient id="casualBody3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#d97706"/>
+        <stop offset="100%" stop-color="#b45309"/>
+      </linearGradient>
+    </defs>
+    <path d="M 120 260 C 120 275, 140 285, 180 288 C 240 292, 320 292, 360 282 C 382 276, 388 265, 388 252 L 384 246 C 350 262, 140 262, 120 246 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <path d="M 130 270 Q 250 280, 375 268" fill="none" stroke="#78350f" stroke-width="2"/>
+    <path d="M 125 245 C 120 220, 130 180, 175 165 C 195 158, 220 180, 245 205 C 275 225, 330 235, 370 235 C 385 235, 388 244, 388 252 C 388 260, 360 265, 340 262 C 280 258, 140 258, 125 245 Z" fill="url(#casualBody3)"/>
+    <path d="M 175 165 C 160 175, 150 200, 155 215" fill="none" stroke="#f1f5f9" stroke-width="2" opacity="0.5"/>
+    <path d="M 225 180 C 240 200, 245 230, 225 245" fill="none" stroke="#451a03" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 225 180 C 240 200, 245 230, 225 245" fill="none" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 235 205 H 245" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="233" cy="205" r="5" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="247" cy="205" r="5" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  </g>
+</svg>

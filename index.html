@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLEVANT | 北科大尖峰的鞋子品牌</title>
+  <meta name="description" content="SOLEVANT 職人手工鞋履，融合傳統工藝與現代舒適科技，為您打造頂級運動鞋、牛津皮鞋、名媛高跟鞋與休閒鞋。踏出自信的每一步。">
+  <meta name="keywords" content="北科大尖峰,SOLEVANT,職人手工鞋履,融合傳統工藝與現代舒適科技,頂級運動鞋,牛津皮鞋,名媛高跟鞋,休閒鞋,鞋子">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Badge bounce keyframes for micro-animation */
+    @keyframes badgeBounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    .badge-animate {
+      animation: badgeBounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.svg" alt="SOLEVANT" class="logo-img">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active" id="nav-home">首頁</a>
+        <a href="about.html" class="nav-link" id="nav-about">關於我們</a>
+        <a href="sneakers.html" class="nav-link" id="nav-sneakers">運動鞋</a>
+        <a href="leather.html" class="nav-link" id="nav-leather">皮鞋</a>
+        <a href="heels.html" class="nav-link" id="nav-heels">高跟鞋</a>
+        <a href="casual.html" class="nav-link" id="nav-casual">休閒鞋</a>
+        <a href="others.html" class="nav-link" id="nav-others">其它類</a>
+        <a href="accessories.html" class="nav-link" id="nav-accessories">配件</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">聯絡我們</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cart-toggle-btn" aria-label="Shopping Cart">
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero_bg.jpg" class="hero-bg" alt="SOLEVANT Background">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="hero-subtitle">SOLEVANT LUXURY FOOTWEAR</h2>
+        <h1 class="hero-title">踏出極致優雅的<br>每一步</h1>
+        <p class="hero-desc">融合歐洲百年職人手作精神與現代足壓釋放科技，SOLEVANT 為您雕琢非凡品味的頂級鞋履，展現無與倫比的舒適與尊貴。</p>
+        <div class="hero-btns">
+          <a href="sneakers.html" class="btn btn-primary">探索系列</a>
+          <a href="about.html" class="btn btn-outline">關於品牌</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Features Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <h2 class="section-title">非凡的工藝承諾</h2>
+        <p class="section-desc">我們秉持最高規格的材質標準與設計細節，為每位追求完美的顧客提供精品級鞋履。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="feature-title">頂級頭層皮革</h3>
+          <p class="feature-desc">嚴選歐洲進口頭層牛皮與頂級羊皮，提供無與倫比的透氣感與柔韌延展性。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="feature-title">職人手工縫製</h3>
+          <p class="feature-desc">每雙鞋皆由擁有 20 年以上經驗的製鞋師傅手工縫製，細節精緻耐穿。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h3 class="feature-title">符合人體工學</h3>
+          <p class="feature-desc">搭載專利釋壓科技鞋墊，全天候分散足底受力，告別疲勞與痠痛。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="icon-svg" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <h3 class="feature-title">尊榮免運服務</h3>
+          <p class="feature-desc">全台提供專車或快捷免運寄送服務，並享有 30 天無條件退換貨保證。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Promo Section -->
+  <section class="section-padding" style="background-color: #f1f5f9;">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <h2 class="section-title">精選分類</h2>
+        <p class="section-desc">針對您的不同生活場景，我們提供量身打造的專屬系列鞋款。</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <img src="images/cat_sneakers.jpg" class="category-img" alt="運動鞋">
+          <div class="category-overlay">
+            <h3 class="category-card-title">動能運動系列</h3>
+            <a href="sneakers.html" class="category-card-link">
+              探索運動鞋 
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="images/cat_leather.jpg" class="category-img" alt="皮鞋">
+          <div class="category-overlay">
+            <h3 class="category-card-title">經典紳士皮鞋</h3>
+            <a href="leather.html" class="category-card-link">
+              探索皮鞋
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="images/cat_heels.jpg" class="category-img" alt="高跟鞋">
+          <div class="category-overlay">
+            <h3 class="category-card-title">名媛高跟鞋</h3>
+            <a href="heels.html" class="category-card-link">
+              探索高跟鞋
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <h2 class="section-title">熱門推薦商品</h2>
+        <p class="section-desc">本季最受矚目與喜愛的經典力作，為您的穿搭注入全新靈魂。</p>
+      </div>
+      <div class="products-grid" id="popular-products">
+        <!-- Dynmically loaded from JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story Banner -->
+  <section class="section-padding" style="background-color: #0f172a; color: white;">
+    <div class="container">
+      <div class="brand-story-wrapper">
+        <div class="brand-story-image">
+          <img src="images/craft.jpg" alt="Craftsmanship">
+        </div>
+        <div class="brand-story-content">
+          <h2 style="font-family: var(--font-serif); font-size: 36px; color: var(--accent-light); margin-bottom: 20px;">傳承百年的製鞋魂</h2>
+          <p style="color: #94a3b8; font-size: 16px; line-height: 1.8; margin-bottom: 24px;">每一雙 SOLEVANT 鞋履的誕生，都需經歷 128 道繁複工序。從嚴格挑選皮革的紋理、精確裁切、手工拉楦，到沿條雙重縫線，師傅們將一生的熱情灌注於每寸縫線之中，只為成全您穿上時的那份驚艷與自豪。</p>
+          <a href="about.html" class="btn btn-primary">了解品牌故事</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-pane">
+          <img src="images/logo.svg" class="footer-logo-img" alt="SOLEVANT">
+          <p class="footer-desc">極致鞋履的代名詞。我們深信一雙好鞋能帶您走向美好的地方，用工藝書寫您的品味日常。</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-column-title">商品分類</h4>
+          <ul class="footer-links">
+            <li><a href="sneakers.html" class="footer-link">動能運動鞋</a></li>
+            <li><a href="leather.html" class="footer-link">經典紳士皮鞋</a></li>
+            <li><a href="heels.html" class="footer-link">名媛雅緻高跟鞋</a></li>
+            <li><a href="casual.html" class="footer-link">日常休閒鞋</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">探索品牌</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">品牌故事</a></li>
+            <li><a href="#" class="footer-link">職人工藝</a></li>
+            <li><a href="#" class="footer-link">聯名特輯</a></li>
+            <li><a href="contact.html" class="footer-link">門市資訊</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-column-title">客戶服務</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">聯絡我們</a></li>
+            <li><a href="#" class="footer-link">退換貨政策</a></li>
+            <li><a href="#" class="footer-link">常見問題 FAQ</a></li>
+            <li><a href="#" class="footer-link">鞋履保養指南</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SOLEVANT Luxury Footwear. All rights reserved.</p>
+        <p>設計與開發：Antigravity Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    // Dynamically render popular items
+    const popularIds = ['sneakers_1', 'leather_1', 'heels_1', 'casual_3'];
+    const grid = document.getElementById('popular-products');
+    
+    if (grid && typeof productsData !== 'undefined') {
+      grid.innerHTML = popularIds.map(id => {
+        const p = productsData[id];
+        if (!p) return '';
+        return `
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-badge sale">${p.badge}</span>
+              <a href="product.html?id=${p.id}">
+                <img class="product-img" src="${p.image}" alt="${p.name}">
+              </a>
+              <button class="product-wishlist" aria-label="Add to wishlist" onclick="alert('已加入願望清單！')">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <div class="product-cat">${p.categoryName}</div>
+              <a href="product.html?id=${p.id}" class="product-name">${p.name}</a>
+              <div class="product-price-row">
+                <span class="product-price">NT$ ${p.price.toLocaleString()}</span>
+                <button class="icon-btn" onclick="addToCart('${p.id}', '8.5', 1)" aria-label="Add to cart">
+                  <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>

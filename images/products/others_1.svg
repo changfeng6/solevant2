@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Studio Background -->
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <circle cx="250" cy="200" r="180" fill="#f1f5f9" opacity="0.6"/>
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="315" rx="150" ry="18" fill="url(#floorShadow)"/>
+  
+  <g filter="url(#softShadow)">
+          <defs>
+        <linearGradient id="bootLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#b45309"/>
+          <stop offset="60%" stop-color="#78350f"/>
+          <stop offset="100%" stop-color="#451a03"/>
+        </linearGradient>
+        <linearGradient id="bootSole" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#1e293b"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+      </defs>
+      <path d="M 120 270 L 120 310 L 150 310 L 155 285 L 360 295 L 375 270 Z" fill="url(#bootSole)"/>
+      <path d="M 155 300 L 160 308 L 170 300 L 175 308 L 185 300 L 190 308 L 200 300" fill="none" stroke="#000000" stroke-width="4"/>
+      <path d="M 125 255 C 120 230, 115 150, 120 130 C 125 110, 155 110, 175 125 C 185 135, 205 180, 225 200 C 255 220, 310 230, 360 230 C 382 230, 385 250, 385 265 C 385 278, 350 282, 335 280 C 270 275, 140 275, 125 255 Z" fill="url(#bootLeather)"/>
+      <ellipse cx="148" cy="120" rx="28" ry="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <path d="M 120 120 C 130 135, 165 135, 175 120" fill="#f8fafc"/>
+      <circle cx="168" cy="155" r="4" fill="#fbbf24"/>
+      <circle cx="178" cy="180" r="4" fill="#fbbf24"/>
+      <circle cx="190" cy="205" r="4" fill="#fbbf24"/>
+      <path d="M 150 150 L 168 155 M 158 175 L 178 180 M 170 200 L 190 205" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

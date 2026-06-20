@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Studio Background -->
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <circle cx="250" cy="200" r="180" fill="#f1f5f9" opacity="0.6"/>
+  
+  <!-- Floor Shadow -->
+  <ellipse cx="250" cy="315" rx="150" ry="18" fill="url(#floorShadow)"/>
+  
+  <g filter="url(#softShadow)">
+          <defs>
+        <linearGradient id="slipperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#94a3b8"/>
+          <stop offset="100%" stop-color="#475569"/>
+        </linearGradient>
+      </defs>
+      <path d="M 120 260 C 120 280, 200 290, 370 275 C 380 270, 380 255, 370 250 C 200 240, 120 250, 120 260 Z" fill="#e2e8f0"/>
+      <path d="M 125 258 C 125 272, 200 280, 360 268 C 360 258, 200 250, 125 258 Z" fill="#f8fafc"/>
+      <path d="M 210 215 C 240 210, 320 220, 365 240 C 380 250, 380 265, 365 270 C 310 270, 230 260, 210 245 C 195 235, 195 220, 210 215 Z" fill="url(#slipperGrad)"/>
+      <path d="M 210 215 C 200 225, 200 235, 210 245" fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 210 215 C 200 225, 200 235, 210 245" fill="none" stroke="#f1f5f9" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
